@@ -1,0 +1,143 @@
+/* 
+Layout
+The designs were created to the following widths:
+
+Mobile: 375px
+Desktop: 1440px
+
+Colors
+Primary
+Dark cyan: hsl(158, 36%, 37%)
+Cream: hsl(30, 38%, 92%)
+
+Neutral
+Very dark blue: hsl(212, 21%, 14%)
+Dark grayish blue: hsl(228, 12%, 48%)
+White: hsl(0, 0%, 100%)
+
+Typography
+Body Copy
+Font size (paragraph): 14px
+Font
+Family: Montserrat
+
+Weights: 500, 700
+
+Family: Fraunces
+
+Weights: 700 
+
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+}
+
+.container-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+}
+
+.container-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(0, 0%, 100%);
+  width: 43em;
+  /* height: 25em; */
+  border-radius: 0.8em;
+  overflow: hidden;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 1.5em; */
+  padding: 2.3em;
+}
+
+.img-product {
+  width: 100%;
+  height: 100%;
+}
+
+.categoria {
+  letter-spacing: 0.5em;
+  font-size: 0.8em;
+}
+
+.tittle {
+  font-size: 2.3em;
+  line-height: 1em;
+}
+
+.fontT {
+  font-family: "Fraunces", serif;
+}
+
+.color-textg {
+  color: hsl(228, 12%, 48%);
+}
+
+.parag {
+  line-height: 1.7em;
+}
+
+/* ? PrinceBox Section */
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.pprice {
+  color: hsl(158, 36%, 37%);
+}
+
+.subr {
+  text-decoration: line-through;
+}
+
+/* ? Button */
+
+.shoppingButton,
+.shoppingButton:link,
+.shoppingButton:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  padding: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s;
+}
+
+.shoppingButton:hover,
+.shoppingButton:active {
+  background-color: hsl(163, 34%, 21%);
+}
